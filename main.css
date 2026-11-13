@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    background: linear-gradient(to bottom, rgb(255, 0, 174), rgb(255, 0, 255));
+}
+
+.animTitle {
+    text-align: center;
+    font-size: 24px;
+    font-family: cursive;
+    background-color: blue;
+    color: darkorange;
+    animation: anim 2s ease-in-out forwards ;
+}
+
+@keyframes anim {
+   from{
+    transform: translateY(-100%);
+    opacity: 0;
+   }
+
+   to {
+    transform: translateY(0%);
+    opacity: 1;
+   }
+}
+
+.interface{
+    max-width: 700px;
+    height: 600px;
+    background-color: blueviolet;
+    margin: auto;
+    display: block;
+    animation: fadeIn 3s ease-in-out forwards;
+    margin-top: 30px;
+    border: solid 5px rgb(0, 251, 13);
+    border-radius: 20px;
+}
+
+@keyframes fadeIn
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.progressBar{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    display: block;
+    background-color: hotpink;
+    margin-top: 20px;
+}
+
+.fill {
+    height: 30px;
+    width: 10%;
+    background-color: yellow;
+}
+
+.question{
+    color: cyan;
+    font-size: 30px;
+    font-family: cursive;
+    margin: 30px;
+}
+
+.btn{
+    background-color: rgb(55, 255, 0);
+    color: crimson;
+    font-family: cursive;
+    font-size: 35px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(0, 166, 255);
+    font-size: 40px;
+}
+
+.optionBtn {
+    margin: auto;
+    display: block;
+    width: 40%;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(255, 0, 251);
+    font-family: cursive;
+}
+
+.optionBtn:hover{
+    background-color: rgb(55, 255, 0);
+}
+
+.timer {
+    background-color: white;
+    text-align: center;
+    width: 100px;
+    border-radius: 60%;
+    font-size: 30px;
+    padding: 30px 0px;
+    margin: auto;
+    display: block;
+    margin-top: 70px;
+    font-family: fantasy;
+    color: cyan;
+}
+
+.scoreLabel, .feedbackLabel {
+    color: rgb(255, 166, 0);
+    font-size: 19px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-family: cursive;
+}
